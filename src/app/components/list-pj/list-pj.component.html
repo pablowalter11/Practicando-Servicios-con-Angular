@@ -1,0 +1,13 @@
+<section>
+    <h2>Lista PJ's</h2>
+    <ul>
+        @for (item of listaPjs; track $index) {
+            <li>
+                Nombre: {{item.nombre}} <br>
+                <a href="">Ver Detalles</a> <br>
+                <a [routerLink]="['update', item.id]">Actualizar</a> <br>
+                <a href="list" (click)="delete(item.id)">Eliminar</a>
+            </li>
+        }
+    </ul>
+</section>

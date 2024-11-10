@@ -1,0 +1,39 @@
+<form [formGroup]="form" (ngSubmit)="addPj()" >
+    <label for="">Nombre:</label>
+    <input 
+        type="text"
+        formControlName="nombre"
+    />
+    @if (form.controls['nombre'].getError('required') && form.controls['nombre'].touched) {
+        <div class="error">Campo Requerido</div>
+    }
+
+    <label for="">Estilo de Pelea:</label>
+    <input
+        type="text"
+        formControlName="estilo_pelea"
+    />
+    @if (form.controls['estilo_pelea'].getError('required') && form.controls['estilo_pelea'].touched) {
+        <div class="error">Campo Requerido</div>
+    }
+
+    <label for="">Primera Aparición:</label>
+    <input 
+        type="number"
+        formControlName="primera_aparicion"
+    />
+    @if (form.controls['primera_aparicion'].getError('required') && form.controls['primera_aparicion'].touched) {
+        <div class="error">Campo Requerido</div>
+    }
+    
+    <label for="">Última Aparición:</label>
+    <input 
+        type="number"
+        formControlName="ultima_aparicion"
+    />
+    @if (form.controls['ultima_aparicion'].getError('required') && form.controls['ultima_aparicion'].touched) {
+        <div class="error">Campo Requerido</div>
+    }
+
+    <button>AGREGAR</button>
+</form>

@@ -1,0 +1,25 @@
+{
+  "personajes": [
+    {
+      "id": "ff09",
+      "nombre": "Jin Kazama",
+      "estilo_pelea": "Karate",
+      "primera_aparicion": 3,
+      "ultima_aparicion": 8
+    },
+    {
+      "id": "10cd",
+      "nombre": "King II",
+      "estilo_pelea": "Lucha Libre",
+      "primera_aparicion": 3,
+      "ultima_aparicion": 8
+    },
+    {
+      "id": "3177",
+      "nombre": "Kazuya",
+      "estilo_pelea": "Karate",
+      "primera_aparicion": 1,
+      "ultima_aparicion": 8
+    }
+  ]
+}
