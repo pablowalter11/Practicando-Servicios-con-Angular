@@ -1,13 +1,6 @@
 {
   "personajes": [
     {
-      "id": "ff09",
-      "nombre": "Jin Kazama",
-      "estilo_pelea": "Karate",
-      "primera_aparicion": 3,
-      "ultima_aparicion": 8
-    },
-    {
       "id": "10cd",
       "nombre": "King II",
       "estilo_pelea": "Lucha Libre",
@@ -16,8 +9,22 @@
     },
     {
       "id": "3177",
-      "nombre": "Kazuya",
+      "nombre": "Kazuya Mishima",
       "estilo_pelea": "Karate",
+      "primera_aparicion": 1,
+      "ultima_aparicion": 8
+    },
+    {
+      "id": "d6da",
+      "nombre": "Jin Kazama",
+      "estilo_pelea": "Karate",
+      "primera_aparicion": 3,
+      "ultima_aparicion": 8
+    },
+    {
+      "id": "eedd",
+      "nombre": "Paul Phoenix",
+      "estilo_pelea": "Judo",
       "primera_aparicion": 1,
       "ultima_aparicion": 8
     }

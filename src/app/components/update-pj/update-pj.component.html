@@ -1,1 +1,18 @@
-<p>update-pj works!</p>
+<fieldset>
+    <legend>Update</legend>
+    <form [formGroup]="form" (ngSubmit)="update()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" formControlName="nombre">
+
+        <label for="estilo_pelea">Estilo de Pelea:</label>
+        <input type="text" id="estilo_pelea" formControlName="estilo_pelea">
+
+        <label for="primera_aparicion">Primera Aparición</label>
+        <input type="number" id="primera_aparicion" formControlName="primera_aparicion">
+
+        <label for="ultima_aparicion">Última Aparición:</label>
+        <input type="number" id="ultima_aparicion" formControlName="ultima_aparicion">
+
+        <button>ACTUALIZAR</button>
+    </form>
+</fieldset>

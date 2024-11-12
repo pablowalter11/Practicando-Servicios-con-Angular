@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { Personaje } from '../../interfaces/personajes.interface';
 import { PersonajeService } from '../../service/personaje.service';
@@ -6,7 +7,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-list-pj',
   standalone: true,
-  imports: [RouterModule],
+  imports: [CommonModule,RouterModule],
   templateUrl: './list-pj.component.html',
   styleUrl: './list-pj.component.css'
 })
@@ -21,6 +22,8 @@ export class ListPjComponent implements OnInit {
   pjService = inject(PersonajeService)
 
   recibirPj(pj: any) {
+    //const otroPj = structuredClone(pj)
+
     this.listaPjs.push({...pj});
   }
 

@@ -17,7 +17,7 @@ export class PersonajeService {
     return this.http.get<Personaje[]>(this.urlBase)
   }
 
-  getPjById(id: string): Observable<Personaje> {
+  getPjById(id: string | null): Observable<Personaje> {
     return this.http.get<Personaje>(`${this.urlBase}/${id}`)
   }
 
@@ -25,7 +25,7 @@ export class PersonajeService {
     return this.http.post<Personaje>(this.urlBase, pj)
   }
 
-  putPj(pj: Personaje, id: string): Observable<Personaje> {
+  putPj(pj: Personaje, id: string | null): Observable<Personaje> {
     return this.http.put<Personaje>(`${this.urlBase}/${id}`, pj)
   }
 
